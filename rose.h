@@ -1,16 +1,8 @@
-// http://javl.github.io/image2cpp/
-// Name your .bmp files as 001.bmp etc only
-// Background colour: Black
-// Rotate image: 270*
-// Code output format: Arduino code
-// identifier: rose_frame_
-// Draw mode: Horizontal 1 bpp
-
 #ifndef ROSE_H
 #define ROSE_H
 
-// Paste the output of image2cpp below
-// Make sure to keep #endif at the very end
+// Number of times the animation will loop for
+const int rosePlayCount = 1;
 
 // '01', 128x64px
 const unsigned char rose_frame_01 [] PROGMEM = {

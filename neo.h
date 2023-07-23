@@ -1,18 +1,10 @@
-// http://javl.github.io/image2cpp/
-// Name your .bmp files as 001.bmp etc only
-// Background colour: Black
-// Rotate image: 270*
-// identifier: neo_frame_
-// Draw mode: Horizontal 1 bpp
-
 #ifndef NEO_H
 #define NEO_H
 
-// Paste the output of image2cpp below
-// Make sure to keep #endif at the very end of the post
-// It doesnt appear to matter if image2cpp processes them out of order, they still play correctly
-// '003', 128x64px
+// Number of times the animation will loop for
+const int neoPlayCount = 1;
 
+// '003', 128x64px
 const unsigned char neo_frame_003 [] PROGMEM = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 

@@ -1,33 +1,33 @@
+/*
+  // ---------------------------------------------------------------
+    https://github.com/Babel-Infoc/braingelion_oled
+    Oled sketch for the RP2040 Braingelion devboard
+    Written by Tully Jagoe for Izzy Voodoo, using libraries from Arduino and Adafruit
+
+    Duplicate blank.h to create new animations
+    Braingelion RP2040 can hold about 1 minute total of animations at 30fps, 2 minutes at 15fps
+  // ---------------------------------------------------------------
+*/
+
+//Core library dependancies
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
+#include "boot.h"
 
-// Include the animation files,
-// playcount defines the numer of times an animation will loop for
+// Include the animation files
 #include "rose.h"
-const int rosePlayCount = 1;
-
 #include "skull.h"
-const int skullPlayCount = 1;
-
 #include "machine_world.h"
-const int machine_worldPlayCount = 1;
-
 #include "robo_girl.h"
-const int robo_girlPlayCount = 1;
-
 #include "window.h"
-const int windowPlayCount = 1;
-
 #include "wicked_lady.h"
-const int wicked_ladyPlayCount = 1;
-
 #include "neo.h"
-const int neoPlayCount = 1;
 
 // Adjust this value to control animation speed (66ms=15fps)
 const int frameDelay = 66; 
 
 // Oled setup
+#define SSD1306_NO_SPLASH
 #define SCREEN_WIDTH  128
 #define SCREEN_HEIGHT 64
 #define OLED_MOSI   1
@@ -41,9 +41,10 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, OLED_MOSI, OLED_CLK, OLED_
 // Boot sequence and function calls
 void setup() {
   display.begin(SSD1306_SWITCHCAPVCC);
-  display.setRotation(0); // Set the display rotation
-  display.display(); // Clear the buffer
-  delay(1000); // Pause for 2 seconds (optional)
+  display.clearDisplay();
+  display.drawBitmap(0, 0, boot, 128, 64, WHITE);
+  display.display();
+  delay(5000);
 }
 
 // The goods

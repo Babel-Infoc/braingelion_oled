@@ -1,16 +1,8 @@
-// http://javl.github.io/image2cpp/
-// Name your .bmp files as 001.bmp etc only
-// Background colour: Black
-// Rotate image: 270*
-// identifier: window_frame_
-// Draw mode: Horizontal 1 bpp
-
 #ifndef WINDOW_H
 #define WINDOW_H
 
-// Paste the output of image2cpp below
-// Make sure to keep #endif at the very end of the post
-// It doesnt appear to matter if image2cpp processes them out of order, they still play correctly
+// Number of times the animation will loop for
+const int windowPlayCount = 1;
 
 // '001', 128x64px
 const unsigned char window_frame_001 [] PROGMEM = {

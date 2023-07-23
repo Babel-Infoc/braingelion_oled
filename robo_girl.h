@@ -1,15 +1,8 @@
-// http://javl.github.io/image2cpp/
-// Name your .bmp files as 001.bmp etc only
-// Background colour: Black
-// Rotate image: 270*
-// identifier: robo_girl_frame_
-// Draw mode: Horizontal 1 bpp
-
 #ifndef ROBO_GIRL_H
 #define ROBO_GIRL_H
 
-// Paste the output of image2cpp below
-// Make sure to keep #endif at the very end of the post
+// Number of times the animation will loop for
+const int robo_girlPlayCount = 1;
 
 // '002', 128x64px
 const unsigned char robo_girl_002 [] PROGMEM = {

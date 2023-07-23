@@ -1,16 +1,8 @@
-// http://javl.github.io/image2cpp/
-// Name your .bmp files as 001.bmp etc only
-// Background colour: Black
-// Rotate image: 270*
-// Code output format: Arduino code
-// identifier: skull_frame_
-// Draw mode: Horizontal 1 bpp
-
 #ifndef SKULL_H
 #define SKULL_H
 
-// Paste the output of image2cpp below
-// Make sure to keep #endif at the very end of the post
+// Number of times the animation will loop for
+const int skullPlayCount = 1;
 
 // '001', 128x64px
 const unsigned char skull_frame_001 [] PROGMEM = {
