@@ -17,5 +17,5 @@
 
 Known issues:
 Due to a compatibility issue between Adafruit_SSD1306 and RP2040, 
-make sure you are using Adafruit_SSD1306 version 2.5.7
+make sure you are using Adafruit_SSD1306 version 2.5.1
 (maybe Adafruit will fix this in a later version idk)
